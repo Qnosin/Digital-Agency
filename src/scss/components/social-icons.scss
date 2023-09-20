@@ -1,0 +1,26 @@
+@use "../base/variables" as *;
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  a {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: $primary-light-color;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $primary-light-color;
+    }
+  }
+}
